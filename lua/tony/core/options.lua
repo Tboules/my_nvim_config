@@ -25,3 +25,5 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.wrap = false
 
 vim.o.signcolumn = "yes"
+
+vim.o.scrolloff = 4
