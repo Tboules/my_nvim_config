@@ -1,0 +1,22 @@
+{
+    "workspace.library": [
+        "/Users/tony.boules/.local/share/nvim/lazy/neodev.nvim/types/stable",
+        "/opt/homebrew/Cellar/neovim/0.9.4/share/nvim/runtime/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/neodev.nvim/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/lazy.nvim/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/moonfly/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/mason-lspconfig.nvim/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/transparent.nvim/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/cmp_luasnip/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/nvim-tree.lua/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/nvim-web-devicons/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/nvim-lspconfig/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/fidget.nvim/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/cmp-nvim-lsp/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/nvim-cmp/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/LuaSnip/lua",
+        "/Users/tony.boules/.local/share/nvim/lazy/mason.nvim/lua",
+        "/Users/tony.boules/.config/nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}
