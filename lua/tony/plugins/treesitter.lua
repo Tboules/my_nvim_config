@@ -43,16 +43,16 @@ return {
           enable = true,
           set_jumps = true, -- whether to set jumps in the jumplist
           goto_next_start = {
-            [']m'] = '@function.outer',
-          },
-          goto_next_end = {
             [']]'] = '@function.outer',
           },
+          goto_next_end = {
+            [']m'] = '@function.outer',
+          },
           goto_previous_start = {
-            ['[m'] = '@function.outer',
+            ['[['] = '@function.outer',
           },
           goto_previous_end = {
-            ['[['] = '@function.outer',
+            ['[m'] = '@function.outer',
           },
         },
         swap = {
