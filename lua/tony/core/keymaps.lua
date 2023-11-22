@@ -22,3 +22,8 @@ keymap.set("n", "<leader>pv", vim.cmd.Ex)
 keymap.set("i", "<C-l>", "<esc>la")
 
 keymap.set("n", "<leader>w", ":w<enter>", { desc = "save file" })
+
+keymap.set("n", "<A-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+keymap.set("n", "<A-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+keymap.set("n", "<A-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+keymap.set("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
