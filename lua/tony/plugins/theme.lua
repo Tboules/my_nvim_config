@@ -5,7 +5,7 @@ return {
   priority = 1000,
 
   config = function()
-    vim.cmd [[colorscheme moonfly]]
+    vim.cmd.colorscheme "moonfly"
     vim.g.moonflyTransparent = true
   end
 }
