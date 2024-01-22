@@ -29,12 +29,12 @@ map("n", "<A-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<A-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
-map("n", "<S-Down>", ":m .+1<CR>==", defaults)
-map("n", "<S-Up>", ":m .-2<CR>==", defaults)
-
-map("v", "<S-Down>", ":m '>+1<CR>gv=gv", defaults)
-map("v", "<S-Up>", ":m '<-2<CR>gv=gv", defaults)
+map("v", "J", ":m '>+1<CR>gv=gv", defaults)
+map("v", "K", ":m '<-2<CR>gv=gv", defaults)
 
 -- Insert empty line without entering insert mode
 map("n", "<leader>o", ':<C-u>call append(line("."), repeat([""], v:count1))<CR>', defaults)
 map("n", "<leader>O", ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', defaults)
+
+map("n", "<C-d>", "<C-d>zz", defaults)
+map("n", "<C-u>", "<C-u>zz", defaults)
