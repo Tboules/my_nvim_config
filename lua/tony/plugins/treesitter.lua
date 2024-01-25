@@ -32,6 +32,7 @@ return {
 				"html",
 				"css",
 				"dockerfile",
+				"templ",
 			},
 
 			-- autoinstall languages that are not installed. defaults to false (but you can change for yourself!)
