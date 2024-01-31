@@ -75,6 +75,10 @@ return {
 			},
 			tsserver = {},
 			html = { filetypes = { "html", "twig", "hbs", "templ" } },
+			tailwindcss = {
+				filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+				init_options = { userLanguages = { templ = "html" } },
+			},
 			templ = { filetypes = { "templ", "html" } },
 			lua_ls = {
 				Lua = {
@@ -83,6 +87,8 @@ return {
 				},
 			},
 		}
+
+		vim.filetype.add({ extension = { templ = "templ" } })
 
 		require("neodev").setup()
 
@@ -103,6 +109,7 @@ return {
 					on_attach = on_attach,
 					settings = servers[server_name],
 					filetypes = (servers[server_name] or {}).filetypes,
+					init_options = (servers[server_name] or {}).init_options,
 				})
 			end,
 		})
