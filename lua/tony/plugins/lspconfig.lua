@@ -76,7 +76,7 @@ return {
 			tsserver = {},
 			html = { filetypes = { "html", "twig", "hbs", "templ" } },
 			tailwindcss = {
-				filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+				filetypes = { "templ", "astro", "html", "javascript", "typescriptreact", "typescript", "react" },
 				init_options = { userLanguages = { templ = "html" } },
 			},
 			templ = { filetypes = { "templ", "html" } },
@@ -113,8 +113,6 @@ return {
 				})
 			end,
 		})
-
-		require("lspconfig").htmx.setup({})
 
 		-- cmp setup
 		local cmp = require("cmp")

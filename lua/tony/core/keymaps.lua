@@ -9,6 +9,7 @@ map("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 -- window management
 map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 map("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
+map("n", "<leader>ss", "<C-w><C-r>", { desc = "Swap Splits" })
 map("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
