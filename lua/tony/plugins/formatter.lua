@@ -21,6 +21,7 @@ return {
 				astro = { "prettierd", "prettier" },
 				c = { "clang_format" },
 				go = { "gofmt" },
+				python = { "black" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
