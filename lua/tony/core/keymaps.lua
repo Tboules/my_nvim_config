@@ -13,11 +13,11 @@ map("n", "<leader>ss", "<C-w><C-r>", { desc = "Swap Splits" })
 map("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
-map("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
-map("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
-map("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
-map("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
-map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+-- map("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
+-- map("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
+-- map("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
+-- map("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
+-- map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- vim commands
 map("n", "<leader>pv", vim.cmd.Ex)
@@ -39,3 +39,8 @@ map("n", "<leader>O", ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR
 
 map("n", "<C-d>", "<C-d>zz", defaults)
 map("n", "<C-u>", "<C-u>zz", defaults)
+--
+-- Obsidian
+map("n", "<leader>so", ":ObsidianSearch<CR>")
+map("n", "<leader>to", ":ObsidianToday<CR>")
+map("n", "<leader>ty", ":ObsidianYesterday<CR>")

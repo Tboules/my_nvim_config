@@ -33,6 +33,8 @@ return {
 				"css",
 				"dockerfile",
 				"templ",
+				"markdown",
+				"markdown_inline",
 			},
 
 			-- autoinstall languages that are not installed. defaults to false (but you can change for yourself!)
