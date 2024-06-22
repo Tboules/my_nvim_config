@@ -12,7 +12,7 @@ return {
 		workspaces = {
 			{
 				name = "Gnosis",
-				path = "/Users/tony.boules/Library/Mobile Documents/iCloud~md~obsidian/Documents/Gnosis",
+				path = "/Users/tony.boules/Documents/vault/gnosis/",
 			},
 		},
 		templates = {
@@ -32,6 +32,20 @@ return {
 		---@param url string
 		follow_url_func = function(url)
 			vim.fn.jobstart({ "open", url })
+		end,
+
+		-- New Note
+		notes_subdir = "+ Encounters/",
+		new_notes_location = "notes_subdir",
+
+		---@param title string|?
+		---@return string
+		note_id_func = function(title)
+			if title ~= nil then
+				return title
+			else
+				return "untitled_note"
+			end
 		end,
 	},
 }
